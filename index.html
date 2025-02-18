@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Perfumes | Essence Collection</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">ESSENCE</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <div class="cart-icon-container">
+                    <a href="#" id="cartIcon"><i class="fas fa-shopping-cart"></i><span id="cartCount">0</span></a>
+                    <div class="cart-dropdown" id="cartDropdown">
+                        <div class="cart-items" id="cartItems">
+                            <!-- Cart items will be added here dynamically -->
+                        </div>
+                        <div class="cart-total" id="cartTotal">
+                            Total: PKR 0
+                        </div>
+                        <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="receiptModal" class="receipt-modal">
+        <div class="receipt-content">
+            <span class="close-receipt">&times;</span>
+            <div id="receiptContent">
+                <!-- Receipt content will be generated here -->
+            </div>
+            <button id="saveReceiptBtn" class="save-receipt-btn">Save Receipt</button>
+        </div>
+    </div>
+
+    <section class="hero" id="home">
+        <video autoplay muted loop>
+            <source src="./7303017-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Discover Your Signature Scent</h1>
+            <p>Explore our collection of luxury fragrances</p>
+            <button class="cta-button" onclick="scrollToProducts()">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Our Collection</h2>
+        <div class="product-grid" id="productGrid">
+            <!-- Products will be added here dynamically -->
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="./image-removebg-preview (15).png" alt="Instagram" width="60" height="60">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="./image-removebg-preview (17).png" alt="Facebook" width="60" height="60">
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+                <img src="./image-removebg-preview (16).png" alt="WhatsApp" width="60" height="60">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Essence Collection. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+<script src="./script.js"></script>
+</html>
